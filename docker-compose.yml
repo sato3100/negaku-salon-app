@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  web:
+    container_name: salon
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    tty: true
+    command: /bin/bash
+
+    volumes:
+      - .:/negaku-salon
+    ports:
+      - "3500:3500"
