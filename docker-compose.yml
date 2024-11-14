@@ -30,6 +30,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./frontend:/app
+      - /app/node_modules # node_modulesをコンテナ内で保持
     command: yarn start
     ports:
       - "8000:8000"
