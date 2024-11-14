@@ -34,3 +34,5 @@
 
 # Ignore .env.local file
 .env.local
+
+.DS_Store
